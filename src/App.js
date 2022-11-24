@@ -7,24 +7,25 @@ import Personal from "./pages/Personal";
 import Settings from "./pages/Settings";
 import Transaction from "./pages/Transaction";
 import LoginUser from "./pages/LoginUser";
+import Header from './components/header/Header';
 
 function App() {
   return (
     <>
-<BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
+      <BrowserRouter>
+        <Routes>
+          //Change to the component you are developing
+          <Route path="/" element={<Header />} />
+          {/* <Route path="/" element={<Layout />} />
           <Route path="Signup" element={<Signup />} />
           <Route path="LoginUser" element={<LoginUser />} />
           <Route path="Bankaccounts" element={<Bankaccounts />} />
           <Route path="Personal" element={<Personal />} />
           <Route path="user/Settings" element={<Settings />} />
-          <Route path="Transaction" element={<Transaction />} />
-
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </>
+          <Route path="Transaction" element={<Transaction />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
