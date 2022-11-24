@@ -1,11 +1,15 @@
 import './App.css';
 //import signUp component
-import SignUp from './components/signUp/signUp.jsx';
+import SignUp from './components/signUp/SignUpForm';
+//import react-router-dom
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    //signUp component
-    <SignUp />
+    <>
+      <SignUp />
+      {/* <Route exact path="/signup" element={<SignUp />} /> */}
+    </>
   );
 }
 
