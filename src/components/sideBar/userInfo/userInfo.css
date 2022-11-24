@@ -1,0 +1,20 @@
+.userContainer{
+    display: grid;
+    grid-template-columns: 150px 150px;
+    margin: 25px;
+    align-content: left;
+    }
+
+    .userCol{
+        align-content: left;
+        width: 100%;
+        height: 100%;
+    }
+
+    .userCol__rowName{
+        font-size: 15pt;
+    }
+
+    .userCol__rowUser{
+        font-size: 13pt;
+    }

@@ -1,0 +1,14 @@
+.balanceContainer{
+    margin: 25px;
+    margin-top: 50px;
+    align-content: left;
+    }
+
+    .balanceContainer__balanceRow{
+        font-size: 18pt;
+        font-weight: bold;
+    }
+
+    .balanceContainer_infoRow{
+        font-size: 14pt;
+    }
