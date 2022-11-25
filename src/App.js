@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Signup from "./pages/Signup";
-import Bankaccounts from "./pages/Bankaccounts";
+import Bankaccounts from "./components/Bankaccount/BankaccountLayout";
 import Personal from "./pages/Personal";
-import Settings from "./pages/Settings";
+import Settings from "./components/Settings/Settings";
 import Transaction from "./pages/Transaction";
-import LoginUser from "./pages/LoginUser";
+import LoginUser from "./components/Login/LoginUser";
 
 function App() {
   return (
