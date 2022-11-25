@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from ".import SideBar from './components/SideBar/SideBar';
-/pages/Layout";
+import Layout from "./pages/Layout";
+import SideBar from './components/SideBar/SideBar';
 import Signup from "./pages/Signup";
 import Bankaccounts from "./pages/Bankaccounts";
 import Personal from "./pages/Personal";
@@ -22,21 +22,23 @@ function App() {
   
   return (
     <>
-      <BrowserRouter>
+      {/*<BrowserRouter>
         <Routes>
           //Change to the component you are developing
-          <Route path="/" element={<Header />} />
-          {/* <Route path="/" element={<Layout />} />
+          <Route path="/" element={} />
+           <Route path="/" element={<Layout />} />
           <Route path="Signup" element={<Signup />} />
           <Route path="LoginUser" element={<LoginUser />} />
           <Route path="Bankaccounts" element={<Bankaccounts />} />
           <Route path="Personal" element={<Personal />} />
           //<Route path="user/Settings" element={<Settings />} />
-          <Route path="Transaction" element={<Transaction />} /> */}
+          <Route path="Transaction" element={<Transaction />} /> 
         </Routes>
       </BrowserRouter>
-    </>
+      */}
     <SideBar {...test}/>
+    </>
+    
   );
 }
 
