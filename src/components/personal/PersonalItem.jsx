@@ -7,7 +7,9 @@ export default function PersonalItem() {
       <Container>
         <Row>
           <Col>
-            <h3>Arely Kertzmann paid Edgar Johns</h3>
+            <a href="/transaction/id">
+              <h3>Arely Kertzmann paid Edgar Johns</h3>
+            </a>
           </Col>
           <Col>
             <h3>-$255</h3>
