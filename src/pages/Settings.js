@@ -29,7 +29,8 @@ const Settings = () => {
           <input
             type="tel"
             className="form-control mt-1"
-            placeholder="Phone number"
+            placeholder="123-45-678"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
           />
         </div>
         <div className="d-grid gap-2 mt-3">
