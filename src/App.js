@@ -1,12 +1,14 @@
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import SideBar from './components/SideBar/SideBar';
 import Signup from "./pages/Signup";
-import Personal from "./components/personal/Personal";
-import Settings from "./components/userSettings/UserSettings";
+import Bankaccounts from "./components/Bankaccount/BankaccountLayout";
+import Personal from "./pages/Personal";
+import Settings from "./components/Settings/Settings";
 import Transaction from "./pages/Transaction";
-import LoginUser from "./pages/LoginUser";
+import LoginUser from "./components/Login/LoginUser";
 import Header from './components/header/Header';
 import BankAccounts from './components/bankAccounts/BankAccounts';
 
