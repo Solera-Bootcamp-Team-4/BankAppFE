@@ -8,9 +8,9 @@ export default function UserSettings() {
       <Header />
 
       {/* Add top margin to whole container TBD */}
-      <Container className="ms-auto">
+      <Container className="ms-auto" fluid="md">
         <Row>
-          <Col>
+          <Col xs={7}>
             <h1>My Account</h1>
             <Image
               src="https://pas-wordpress-media.s3.amazonaws.com/content/uploads/2020/02/19165748/Bplans-Headers-2021-41.jpg"
