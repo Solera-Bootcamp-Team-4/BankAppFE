@@ -27,7 +27,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Change to the component you are developing */}
-          <Route path="/" element={<Header />} />
+          <Route path="/" element={<Layout />} />
           {/* <Route path="/" element={<Layout />} /> */}
           <Route path="Signup" element={<Signup />} />
           <Route path="LoginUser" element={<LoginUser />} />
