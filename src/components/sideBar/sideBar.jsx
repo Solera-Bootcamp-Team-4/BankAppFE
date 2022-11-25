@@ -1,16 +1,16 @@
-import './SideBar.css';
-import UserInfo from './UserInfo/UserInfo';
-import ButtonHome from './Buttons/ButtonHome';
+import './sideBar.css';
+import userInfo from './UserInfo/userInfo';
+import buttonHome from './Buttons/buttonHome';
 import ButtonMyAccount from './Buttons/ButtonMyAccount';
 import ButtonBankAccounts from './Buttons/ButtonBankAccounts';
 import ButtonNotifications from './Buttons/ButtonNotifications';
 import ButtonLogout from './Buttons/ButtonLogout';
-import BalanceInfo from './BalanceInfo/BalanceInfo';
+import balanceInfo from './BalanceInfo/balanceInfo';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
 
-function SideBar(props){
+function sideBar(props){
     const firstName = props.firstName;
     const lastName = props.lastName;
     const userName = props.userName;
@@ -24,13 +24,13 @@ function SideBar(props){
     return(
         <Container className="sideContainer">
         <Row className='sideRow'>
-            <UserInfo fullName={firstName +' '+ lastName} userName={userName} userPic={userPic}/>
+            <userInfo fullName={firstName +' '+ lastName} userName={userName} userPic={userPic}/>
         </Row>
         <Row className='sideRow'>
-           <BalanceInfo balance={balance}/>
+           <balanceInfo balance={balance}/>
         </Row>
         <Row className='sideRow'>
-            <ButtonHome />
+            <buttonHome />
             <ButtonMyAccount />
             <ButtonBankAccounts />
             <ButtonNotifications />
@@ -39,4 +39,4 @@ function SideBar(props){
         </Container>
       );
 }
-export default SideBar;
+export default sideBar;

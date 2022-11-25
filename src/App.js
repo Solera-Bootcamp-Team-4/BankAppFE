@@ -2,7 +2,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import SideBar from './components/SideBar/SideBar';
+import sideBar from './components/SideBar/sideBar';
 import Signup from "./pages/Signup";
 import Bankaccounts from "./components/Bankaccount/BankaccountLayout";
 import Personal from "./pages/Personal";
@@ -38,7 +38,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       
-    {/*<SideBar {...test}/>*/}
+    {/*<sideBar {...test}/>*/}
     </>
     
   );
