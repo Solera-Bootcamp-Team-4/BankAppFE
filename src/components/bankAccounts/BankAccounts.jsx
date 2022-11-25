@@ -15,7 +15,9 @@ export default function BankAccounts() {
         {/* make a component out of this row */}
         <Row>
           <Col>
-            <h3>O'Hara - Labadie Bank</h3>
+            <a href="/personal">
+              <h3>O'Hara - Labadie Bank</h3>
+            </a>
           </Col>
           <Col>
             <Button variant="primary">Create</Button>
