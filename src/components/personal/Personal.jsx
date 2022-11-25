@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Container, Dropdown, Row } from 'react-bootstrap';
 import Header from '../header/Header';
+import PersonalItem from './PersonalItem';
 
 export default function Personal() {
   return (
@@ -39,10 +40,10 @@ export default function Personal() {
         </Row>
 
         <Row>
-          <h1>Personal</h1>
-        </Row>
-        <Row>
-          <h3>Everyone</h3>
+          <h5>Personal</h5>
+          <PersonalItem />
+          <PersonalItem />
+          <PersonalItem />
         </Row>
       </Container>
     </>
