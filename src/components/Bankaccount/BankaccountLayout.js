@@ -1,5 +1,10 @@
+import BankAccount from "./BankAccount";
+import Button from 'react-bootstrap/Button';
+import Bankaccount from "./BankAccount";
 const BankaccountLayout = () => {
-    return <h1>Bankaccounts</h1>;
+     
+  return <Bankaccount></Bankaccount>
+   
   };
   
   export default BankaccountLayout;
