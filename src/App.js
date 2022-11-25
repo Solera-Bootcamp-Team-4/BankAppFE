@@ -22,7 +22,7 @@ function App() {
   
   return (
     <>
-      {/*<BrowserRouter>
+      <BrowserRouter>
         <Routes>
           {/* Change to the component you are developing */}
           <Route path="/" element={<Header />} />
@@ -35,8 +35,8 @@ function App() {
           <Route path="Transaction" element={<Transaction />} />
         </Routes>
       </BrowserRouter>
-      */}
-    <SideBar {...test}/>
+      
+    {/*<SideBar {...test}/>*/}
     </>
     
   );
