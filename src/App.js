@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Signup from "./pages/Signup";
 import Personal from "./components/personal/Personal";
-import Settings from "./pages/Settings";
+import Settings from "./components/userSettings/UserSettings";
 import Transaction from "./pages/Transaction";
 import LoginUser from "./pages/LoginUser";
 import Header from './components/header/Header';
@@ -21,7 +21,7 @@ function App() {
           <Route path="LoginUser" element={<LoginUser />} />
           <Route path="bankAccounts" element={<BankAccounts />} />
           <Route path="personal" element={<Personal />} />
-          <Route path="user/Settings" element={<Settings />} />
+          <Route path="user/settings" element={<Settings />} />
           <Route path="Transaction" element={<Transaction />} />
         </Routes>
       </BrowserRouter>

@@ -17,7 +17,9 @@ export default function Header() {
             <NavDropdown title="Menu" id="basic-nav-dropdown">
               {/* NavDropdown children item */}
               <NavDropdown.Item href="/">Home</NavDropdown.Item>
-              <NavDropdown.Item href="personal">My Account</NavDropdown.Item>
+              <NavDropdown.Item href="user/settings">
+                My Account
+              </NavDropdown.Item>
               <NavDropdown.Item href="bankAccounts">
                 Bank Accounts
               </NavDropdown.Item>
