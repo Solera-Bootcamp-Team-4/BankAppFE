@@ -1,11 +1,11 @@
 import './sideBar.css';
-import userInfo from './UserInfo/userInfo';
-import buttonHome from './Buttons/buttonHome';
-import ButtonMyAccount from './Buttons/ButtonMyAccount';
-import ButtonBankAccounts from './Buttons/ButtonBankAccounts';
-import ButtonNotifications from './Buttons/ButtonNotifications';
-import ButtonLogout from './Buttons/ButtonLogout';
-import balanceInfo from './BalanceInfo/balanceInfo';
+import userInfo from './userInfo/userInfo';
+import buttonHome from './buttons/buttonHome';
+import ButtonMyAccount from './buttons/ButtonMyAccount';
+import ButtonBankAccounts from './buttons/ButtonBankAccounts';
+import ButtonNotifications from './buttons/ButtonNotifications';
+import ButtonLogout from './buttons/ButtonLogout';
+import balanceInfo from './balanceInfo/balanceInfo';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
