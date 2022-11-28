@@ -20,8 +20,8 @@ export default function UserSettings() {
           <Col>
             <Form>
               <Form.Group className="mb-3" controlId="formBasicName">
-                <Form.Label>First name</Form.Label>
-                <Form.Control type="text" placeholder="Enter first name" />
+                <Form.Label for="firstName">First name</Form.Label>
+                <Form.Control type="text" placeholder="Enter first name" name="firstName"/>
                 <Form.Label>Last name</Form.Label>
                 <Form.Control type="text" placeholder="Enter last name" />
               </Form.Group>
