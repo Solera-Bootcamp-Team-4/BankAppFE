@@ -2,7 +2,13 @@ import React from 'react';
 import { Button, Col, Container, Form, Image, Row } from 'react-bootstrap';
 import Header from '../header/Header';
 
-export default function UserSettings() {
+export default function UserSettings(props) {
+  const firstName = props.firstName;
+  const lastName = props.lastName;
+  const userEmail = props.userEmail;
+  const userPassword = props.userPassword;
+ 
+
   return (
     <>
       <Header />
@@ -21,14 +27,14 @@ export default function UserSettings() {
             <Form>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label for="firstName">First name</Form.Label>
-                <Form.Control type="text" placeholder="Enter first name" name="firstName"/>
+                <Form.Control type="text" placeholder={firstName} name="firstName"/>
                 <Form.Label>Last name</Form.Label>
-                <Form.Control type="text" placeholder="Enter last name" />
+                <Form.Control type="text" placeholder={lastName} />
               </Form.Group>
 
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Control type="email" placeholder={userEmail} />
                 <Form.Text className="text-muted">
                   We'll never share your email with anyone else.
                 </Form.Text>
@@ -36,7 +42,7 @@ export default function UserSettings() {
 
               <Form.Group className="mb-3" controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder={userPassword} />
               </Form.Group>
               {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Check me out" />

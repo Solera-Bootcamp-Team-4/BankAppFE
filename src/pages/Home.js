@@ -1,4 +1,5 @@
 import SideBar from "../components/sideBar/SideBar"
+import UserSettings from "../components/userSettings/UserSettings";
 import "./Home.css"
 
 const Home = (props) => {
@@ -7,14 +8,10 @@ const Home = (props) => {
     return(
         <div className="mainApp">
             <div className="sidebarDiv"><SideBar{...data}/></div>
-            <div className="contentDiv">
-            </div>
+            <div className="contentDiv"><UserSettings{...props}/></div>
         </div>
     );
 }
 
 export default Home;
 
-
-
-// USER DETAILS

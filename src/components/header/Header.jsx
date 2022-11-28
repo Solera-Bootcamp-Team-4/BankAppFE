@@ -4,6 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import Badge from 'react-bootstrap/Badge';
+import { BsFillBellFill } from "react-icons/bs";
+
 
 export default function Header() {
   return (
@@ -30,6 +33,9 @@ export default function Header() {
             <Button variant="primary">$ New</Button>
           </Nav>
           <Navbar.Brand href="/">Bank App</Navbar.Brand>
+          <Button variant="primary"><BsFillBellFill /><Badge bg="success">9</Badge>
+      <span className="visually-hidden">unread messages</span>
+    </Button>
         </Container>
       </Navbar>
     </>

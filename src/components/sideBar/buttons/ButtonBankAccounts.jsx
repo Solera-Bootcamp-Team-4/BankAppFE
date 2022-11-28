@@ -11,14 +11,8 @@ import * as ReactDOM from 'react-dom';
 
 function ButtonBankAccounts(){
 
-    const onClickHandler = () =>{
-        let obj = ReactDOM.createRoot(document.getElementById('mainDiv'));
-        const load = "BankAccounts();"
-        obj.render(load);
-    }
-
-    return(
-     <Button variant="primary" className='Buttons'>Bank Accounts</Button>
+   return(
+     <Button variant="primary" className='Buttons' href="/BankAccount">Bank Accounts</Button>
     );
 }
 

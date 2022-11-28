@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import Header from '../header/Header';
 
-export default function BankAccounts() {
+ function BankAccounts() {
   return (
     <>
       <Container>
@@ -27,3 +27,4 @@ export default function BankAccounts() {
     </>
   );
 }
+export default BankAccounts;

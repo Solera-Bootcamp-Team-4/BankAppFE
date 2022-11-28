@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 function ButtonMyAccount(){
     return(
-        <Button variant="primary" className='Buttons'>My Account</Button>
+        <Button variant="primary" className='Buttons' href="/Transaction">My Account</Button>
     );
 }
 

@@ -8,7 +8,7 @@ import Settings from "./components/Settings/Settings";
 import Transaction from "./pages/Transaction";
 import LoginUser from "./components/Login/LoginUser";
 import Header from './components/header/Header';
-import BankAccounts from './components/bankAccounts/BankAccounts';
+import BankAccount from './pages/BankAccount';
 import UserSettings from './components/userSettings/UserSettings';
 import Home from './pages/Home';
 
@@ -20,18 +20,21 @@ function App() {
     lastName: "Taquelim",
     balance: 547.48,
     userPic: "PICTURE",
+    userEmail: "nuno.taquelim@solera.com",
+    userPassword: "123"
    }
-  
+
+    
   return (
     <>
       <BrowserRouter>
         <Routes>
           {/* Change to the component you are developing */}
-           <Route path="/" element={<Home {...test}/>} />
-          {/*<Route path="/" element={<Layout />} /> */}
+          <Route path="Home" element={<Home {...test}/>} />
+          {/* <Route path="/" element={<Layout />} /> */}
           <Route path="SignUpForm" element={<SignUpForm />} />
           <Route path="LoginUser" element={<LoginUser />} />
-          <Route path="BankAccounts" element={<BankAccounts />} />
+          <Route path="BankAccount" element={<BankAccount{...test}/>} />
           {/* <Route path="personal" element={} /> */}
           <Route path="user/settings" element={<Settings />} />
           <Route path="Transaction" element={<Transaction />} />
