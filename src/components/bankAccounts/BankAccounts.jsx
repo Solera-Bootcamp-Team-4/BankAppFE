@@ -5,7 +5,6 @@ import Header from '../header/Header';
 export default function BankAccounts() {
   return (
     <>
-      <Header />
       <Container>
         <Row>
           <Col>

@@ -5,11 +5,8 @@ import { Col, Container } from 'react-bootstrap';
 
 function ButtonNotifications(){
     return(
-        <Container>
-            <Col></Col>
-            <Col><Button variant="outline-light">Notifications</Button></Col>
-        </Container>
-    );
+            <Button variant="primary" className='Buttons'>Notifications</Button>
+            );
 }
 
 export default ButtonNotifications;

@@ -1,8 +1,8 @@
-import './balanceInfo.css';
+import './BalanceInfo.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-function balanceInfo(props){
+function BalanceInfo(props){
     
     const balance = props.balance;
 
@@ -13,4 +13,4 @@ function balanceInfo(props){
         </Container>
     );
 }
-export default balanceInfo;
+export default BalanceInfo;
