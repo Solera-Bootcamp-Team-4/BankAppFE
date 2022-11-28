@@ -1,17 +1,17 @@
 import './SideBar.css';
-import UserInfo1 from './userInfo/UserInfo1';
-import ButtonHome1 from './buttons/ButtonHome1';
+import UserInfo from './userInfo/UserInfo';
+import ButtonHome from './buttons/ButtonHome';
 import ButtonMyAccount from './buttons/ButtonMyAccount';
 import ButtonBankAccounts from './buttons/ButtonBankAccounts';
 import ButtonNotifications from './buttons/ButtonNotifications';
 import ButtonLogout from './buttons/ButtonLogout';
-import BalanceInfo1 from './balanceInfo/BalanceInfo1';
+import BalanceInfo from './balanceInfo/BalanceInfo';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-function SideBar1(props){
+function SideBar(props){
     const firstName = props.firstName;
     const lastName = props.lastName;
     const userName = props.userName;
@@ -25,13 +25,13 @@ function SideBar1(props){
     return(
         <Container className="sideContainer">
         <Row className='sideRow'>
-            <UserInfo1 fullName={firstName +' '+ lastName} userName={userName} userPic={userPic}/>
+            <UserInfo fullName={firstName +' '+ lastName} userName={userName} userPic={userPic}/>
         </Row>
         <Row className='sideRow'>
-           <BalanceInfo1 balance={balance}/>
+           <BalanceInfo balance={balance}/>
         </Row>
         <Row className='sideRow'>
-            <ButtonHome1 />
+            <ButtonHome />
             <ButtonMyAccount />
             <ButtonBankAccounts />
             <ButtonNotifications />
@@ -40,4 +40,4 @@ function SideBar1(props){
         </Container>
       );
 }
-export default SideBar1;
+export default SideBar;
