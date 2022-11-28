@@ -15,7 +15,7 @@ function UserInfo(props){
         <Col className="userCol">{userPic}</Col>
         <Col className="userCol">
             <Row className="userCol__rowName">{name}</Row>
-            <Row className="userCol__rowUser">@{userName}</Row>
+            <Row className="userCol__rowUser">{userName}</Row>
         </Col>
     </Container>
 );;

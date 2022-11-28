@@ -5,13 +5,30 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import React, { useEffect, useRef, useState } from "react";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 const LoginUser = () => {
+  const navigate = useNavigate();
+  const fname=useRef()
+  const lname=useRef()
+  const email=useRef()
+  const password=useRef()
 
-    const SubmitHandler = event =>{
-
-    };
+  const localSignUp=localStorage.getItem("signUp")
+  const localEmail=localStorage.getItem("email")
+  const localPassword=localStorage.getItem("password")
+  const localName=localStorage.getItem("name")
+  const handleClick=()=>{
+    if(email.current.value==localEmail&&password.current.value==localPassword){
+        localStorage.setItem("signUp",email.current.value)
+        alert("You are logged in")
+        navigate('/Home');
+    }else{
+        alert("Please Enter valid Credential")
+    }
+   }
 
 
     return  (
@@ -26,7 +43,7 @@ const LoginUser = () => {
       </Row>
     <Row>
     <div className="Auth-form-container">
-      <form className="Auth-form" onSubmit={SubmitHandler}>
+      <form className="Auth-form" >
       <div className="Auth-form-content">
         <h3 className="Auth-form-title">Login</h3>
         <div className="form-group mt-3">
@@ -35,14 +52,14 @@ const LoginUser = () => {
         label="Email address"
         className="mb-3"
       >
-        <Form.Control type="email" placeholder="name@example.com" />
+        <Form.Control type="email" placeholder="name@example.com" ref={email} />
       </FloatingLabel>
       <FloatingLabel controlId="floatingPassword" label="Password">
-        <Form.Control type="password" placeholder="Password" />
+        <Form.Control type="password" placeholder="Password" ref={password} />
       </FloatingLabel>
       </div>
         <div className="d-grid gap-2 mt-3">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" onClick={handleClick}>
             Submit
           </button>
         </div>

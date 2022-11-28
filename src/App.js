@@ -13,11 +13,13 @@ import UserSettings from './components/userSettings/UserSettings';
 import Home from './pages/Home';
 
 function App() {
-  
+  const localEmail=localStorage.getItem("email")
+  const lastlocalName=localStorage.getItem("lname")
+  const firstlocalName=localStorage.getItem("fname")
   let test = {
-    userName: "ntaquelim",
-    firstName: "Nuno",
-    lastName: "Taquelim",
+    userName: localEmail,
+    firstName: firstlocalName,
+    lastName: lastlocalName,
     balance: 547.48,
     userPic: "PICTURE",
    }
@@ -27,8 +29,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Change to the component you are developing */}
-           <Route path="/" element={<Home {...test}/>} />
-          {/*<Route path="/" element={<Layout />} /> */}
+           <Route path="/Home" element={<Home {...test}/>} />
+          <Route path="/" element={<Layout />} />
           <Route path="SignUpForm" element={<SignUpForm />} />
           <Route path="LoginUser" element={<LoginUser />} />
           <Route path="BankAccounts" element={<BankAccounts />} />
