@@ -1,10 +1,34 @@
-import { Outlet, Link } from "react-router-dom";
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import "./Layout.css";
 
 const Layout = () => {
+
+   
+
   return (
-    <>
-      <nav>
-        <ul>
+    <Container>
+      <Row className="header">
+      <Col>Real World App</Col>
+        <Col>
+        <Button variant="primary" href="/">Home</Button>
+        <Button variant="primary" href="/LoginUser">Login</Button>
+        <Button variant="primary" href="/SignUpForm">SignUp</Button>
+        </Col>
+      </Row>
+      <Row className="BigDiv">
+        component div
+      </Row>
+
+    </Container>
+  )
+};
+
+export default Layout;
+{/* <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -17,26 +41,9 @@ const Layout = () => {
                 <li>
              <Link to="/Bankaccounts ">Bankaccounts</Link>
           </li>
-          {/* <li> */}
-            {/* <Link to="/Bankaccounts ">Bankaccounts</Link>
-          </li>
-          <li>
-            <Link to="/Personal ">Personal</Link>
-          </li>
- 
-          <li>
-            <Link to="/Transaction ">Transaction</Link>
-          </li> */}
+
                    <li>
             <Link to="/user/Settings ">Settings</Link>
           </li>
-  
-        </ul>
-      </nav>
 
-      <Outlet />
-    </>
-  )
-};
-
-export default Layout;
+        </ul> */}
