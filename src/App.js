@@ -2,7 +2,7 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import SideBar1 from './components/sideBar/SideBar1';
+import SideBar from './components/sideBar/SideBar';
 import SignUpForm from "./components/signUp/SignUpForm";
 import Settings from "./components/Settings/Settings";
 import Transaction from "./pages/Transaction";

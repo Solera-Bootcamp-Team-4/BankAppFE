@@ -1,4 +1,4 @@
-import SideBar1 from "../components/sideBar/SideBar1"
+import SideBar from "../components/sideBar/SideBar"
 import "./Home.css"
 
 const Home = (props) => {
@@ -6,7 +6,7 @@ const Home = (props) => {
 
     return(
         <div className="mainApp">
-            <div className="sidebarDiv"><SideBar1{...data}/></div>
+            <div className="sidebarDiv"><SideBar{...data}/></div>
             <div className="contentDiv">
             </div>
         </div>
