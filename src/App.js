@@ -2,9 +2,8 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import SideBar from './components/sideBar/SideBar';
+import SideBar1 from './components/sideBar/SideBar1';
 import SignUpForm from "./components/signUp/SignUpForm";
-import Personal from "./pages/Personal";
 import Settings from "./components/Settings/Settings";
 import Transaction from "./pages/Transaction";
 import LoginUser from "./components/Login/LoginUser";
@@ -33,7 +32,7 @@ function App() {
           <Route path="SignUpForm" element={<SignUpForm />} />
           <Route path="LoginUser" element={<LoginUser />} />
           <Route path="BankAccounts" element={<BankAccounts />} />
-          <Route path="personal" element={<Personal />} />
+          {/* <Route path="personal" element={} /> */}
           <Route path="user/settings" element={<Settings />} />
           <Route path="Transaction" element={<Transaction />} />
         </Routes>
