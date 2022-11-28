@@ -1,6 +1,6 @@
 import SideBar from "../components/sideBar/SideBar"
 import Personal from "../components/personal/Personal";
-import "./Home.css"
+import "./style.css"
 
 const Transaction = (props) => {
     let data = {...props};
@@ -8,7 +8,7 @@ const Transaction = (props) => {
     return(
         <div className="mainApp">
             <div className="sidebarDiv"><SideBar{...data}/></div>
-            <div className="contentDiv"><Personal{...props}/></div>
+            <div className="contentDiv"><Personal{...data}/></div>
         </div>
     );
 }

@@ -25,10 +25,12 @@ export default function UserSettings(props) {
           </Col>
           <Col>
             <Form>
-              <Form.Group className="mb-3" controlId="formBasicName">
+              <Form.Group className="mb-3" controlId="formBasicFirstName">
                 <Form.Label for="firstName">First name</Form.Label>
                 <Form.Control type="text" placeholder={firstName} name="firstName"/>
-                <Form.Label>Last name</Form.Label>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicLastName">
+                 <Form.Label>Last name</Form.Label>
                 <Form.Control type="text" placeholder={lastName} />
               </Form.Group>
 

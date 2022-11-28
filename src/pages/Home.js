@@ -1,6 +1,6 @@
 import SideBar from "../components/sideBar/SideBar"
 import UserSettings from "../components/userSettings/UserSettings";
-import "./Home.css"
+import "./style.css"
 
 const Home = (props) => {
     let data = {...props};

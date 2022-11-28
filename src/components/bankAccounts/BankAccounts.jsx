@@ -5,7 +5,9 @@ import Header from '../header/Header';
  function BankAccounts() {
   return (
     <>
+      <Header />
       <Container>
+      
         <Row>
           <Col>
             <h1>Bank Accounts</h1>

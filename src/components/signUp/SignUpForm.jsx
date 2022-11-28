@@ -54,19 +54,19 @@ const SignUpForm = () => {
       <div className="Auth-form-content">
       <h3 className="Auth-form-title">SignUp</h3>
         <div className="form-group mt-3">
-      <FloatingLabel controlId="floatingInput" label="First Name*" className="mb-3">
+      <FloatingLabel controlId="floatingInputFirstName" label="First Name*" className="mb-3">
       <Form.Control type="text" placeholder="First Name*" ref={fname} />
       </FloatingLabel>
-      <FloatingLabel controlId="floatingInput" label="Last Name*">
+      <FloatingLabel controlId="floatingInputLastName" label="Last Name*">
         <Form.Control type="text" placeholder="Last Name*" ref={lname} />
       </FloatingLabel>
-      <FloatingLabel controlId="floatingInput" label="Email*">
+      <FloatingLabel controlId="floatingInputEmail" label="Email*">
         <Form.Control type="text" placeholder="Email*" ref={email} />
       </FloatingLabel>
       <FloatingLabel controlId="floatingPassword" label="Password*">
         <Form.Control type="password" placeholder="Password" ref={password} />
       </FloatingLabel>
-      <FloatingLabel controlId="floatingPassword" label="Confirm Password*">
+      <FloatingLabel controlId="floatingPasswordConfirm" label="Confirm Password*">
         <Form.Control type="password" placeholder="Confirm Password*" />
       </FloatingLabel>
         </div>

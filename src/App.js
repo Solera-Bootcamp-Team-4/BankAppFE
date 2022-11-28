@@ -32,14 +32,15 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Change to the component you are developing */}
+          
+          <Route path="/" element={<Layout />} /> 
           <Route path="Home" element={<Home {...test}/>} />
-          {/* <Route path="/" element={<Layout />} /> */}
           <Route path="SignUpForm" element={<SignUpForm />} />
           <Route path="LoginUser" element={<LoginUser />} />
-          <Route path="BankAccount" element={<BankAccount{...test}/>} />
+          <Route path="BankAccount" element={<BankAccount {...test}/>} />
           {/* <Route path="personal" element={} /> */}
           <Route path="user/settings" element={<Settings />} />
-          <Route path="Transaction" element={<Transaction />} />
+          <Route path="Transaction" element={<Transaction {...test}/>} />
         </Routes>
       </BrowserRouter>
       

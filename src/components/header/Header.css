@@ -1,0 +1,13 @@
+.headerDiv{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    align-content: center;
+    color: white;
+    background-color: blue;
+}
+
+
+h1{
+    text-align: center;
+}
