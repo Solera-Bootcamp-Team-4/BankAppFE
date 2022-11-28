@@ -2,9 +2,8 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
-import sideBar from './components/sideBar/sideBar';
+import SideBar from './components/sideBar/SideBar';
 import SignUpForm from "./components/signUp/SignUpForm";
-import Bankaccounts from "./components/Bankaccount/BankaccountLayout";
 import Personal from "./pages/Personal";
 import Settings from "./components/Settings/Settings";
 import Transaction from "./pages/Transaction";
@@ -12,6 +11,7 @@ import LoginUser from "./components/Login/LoginUser";
 import Header from './components/header/Header';
 import BankAccounts from './components/bankAccounts/BankAccounts';
 import UserSettings from './components/userSettings/UserSettings';
+import Home from './pages/Home';
 
 function App() {
   
@@ -28,18 +28,17 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* Change to the component you are developing */}
-          {/* <Route path="/" element={<UserSettings/>} />*/}
-          <Route path="/" element={<Layout />} /> 
+           <Route path="/" element={<Home {...test}/>} />
+          {/*<Route path="/" element={<Layout />} /> */}
           <Route path="SignUpForm" element={<SignUpForm />} />
           <Route path="LoginUser" element={<LoginUser />} />
-          <Route path="bankAccounts" element={<BankAccounts />} />
+          <Route path="BankAccounts" element={<BankAccounts />} />
           <Route path="personal" element={<Personal />} />
           <Route path="user/settings" element={<Settings />} />
           <Route path="Transaction" element={<Transaction />} />
         </Routes>
       </BrowserRouter>
       
-    {/*<sideBar {...test}/>*/}
     </>
     
   );

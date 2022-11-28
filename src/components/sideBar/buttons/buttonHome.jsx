@@ -1,10 +1,10 @@
 import './Buttons.css';
 import Button from 'react-bootstrap/Button';
 
-function buttonHome(){
+function ButtonHome(){
     return(
-        <Button variant="outline-light">Home</Button>
+        <Button variant="primary" className='Buttons'>Home</Button>
     );
 }
 
-export default buttonHome;
+export default ButtonHome;

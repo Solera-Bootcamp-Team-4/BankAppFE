@@ -1,8 +1,6 @@
 .sideContainer{
     height: 100%;
-    width: 400px;
+    width: 100%;
     border-right:2px solid #ccc;
-}
-.sideRow{
-    margin: 25px;
+    align-content: left;
 }
