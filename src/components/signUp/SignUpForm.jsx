@@ -31,6 +31,7 @@ const SignUpForm = () => {
      localStorage.setItem("signUp",email.current.value)
      alert("Account created successfully!!")
      navigate('/Home');
+     window.location.reload()
    }
 }
 
