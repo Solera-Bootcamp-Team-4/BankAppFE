@@ -13,11 +13,13 @@ import UserSettings from './components/userSettings/UserSettings';
 import Home from './pages/Home';
 
 function App() {
-  
+  const localEmail=localStorage.getItem("email")
+  const lastlocalName=localStorage.getItem("lname")
+  const firstlocalName=localStorage.getItem("fname")
   let test = {
-    userName: "ntaquelim",
-    firstName: "Nuno",
-    lastName: "Taquelim",
+    userName: localEmail,
+    firstName: firstlocalName,
+    lastName: lastlocalName,
     balance: 547.48,
     userPic: "PICTURE",
     userEmail: "nuno.taquelim@solera.com",
