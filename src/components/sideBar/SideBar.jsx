@@ -23,9 +23,9 @@ function SideBar(props){
 
 
     return(
-        <Container className="sideContainer">
+        <div className="sideContainer" id="sideContainer" >
         <Row className='sideRow'>
-            <UserInfo fullName={firstName +' '+ lastName} userName={userName} userPic={userPic}/>
+            <UserInfo fullName={firstName +' '+ lastName} userName={userName} userPic={userPic} />
         </Row>
         <Row className='sideRow'>
            <BalanceInfo balance={balance}/>
@@ -37,7 +37,7 @@ function SideBar(props){
             <ButtonNotifications />
             <ButtonLogout />
         </Row>
-        </Container>
+        </div>
       );
 }
 export default SideBar;

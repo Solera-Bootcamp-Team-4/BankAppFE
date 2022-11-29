@@ -16,17 +16,23 @@ function App() {
   const localEmail=localStorage.getItem("email")
   const lastlocalName=localStorage.getItem("lname")
   const firstlocalName=localStorage.getItem("fname")
+  let transaction1 = {id: 1 , ammount: 400, from: "Tony", to: {firstlocalName}, date: "27/11/2022"}
+  let transaction2 = {id: 2 , ammount: 350, from: {firstlocalName}, to: "Tony", date: "25/10/2022"}
+  let transaction3 = {id: 3 , ammount: 1500, from: "Andre", to: {firstlocalName}, date: "29/9/2022"}
+
   let test = {
     userName: localEmail,
     firstName: firstlocalName,
     lastName: lastlocalName,
     balance: 547.48,
     userPic: "PICTURE",
-    userEmail: "nuno.taquelim@solera.com",
-    userPassword: "123"
-   }
+    userEmail: localEmail,
+    userPassword: "123",
+    transactions: [transaction1, transaction2, transaction3]
+    }
+   
 
-    
+
   return (
     <>
       <BrowserRouter>
@@ -39,7 +45,7 @@ function App() {
           <Route path="LoginUser" element={<LoginUser />} />
           <Route path="BankAccount" element={<BankAccount {...test}/>} />
           {/* <Route path="personal" element={} /> */}
-          <Route path="user/settings" element={<Settings />} />
+          <Route path="user/settings" element={<Settings {...test}/>} />
           <Route path="Transaction" element={<Transaction {...test}/>} />
         </Routes>
       </BrowserRouter>

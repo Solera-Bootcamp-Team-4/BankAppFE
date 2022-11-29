@@ -6,17 +6,14 @@ import './Header.css';
 import React, { useState } from "react";
 
 
+ 
 
-function Header(p) {
+function Header(props) {
 
-  const hideHandler = () =>{
-    const idSideBar = document.getElementById('sideBarDiv');
-    
-  }
-
+ 
   return (
   <div className="headerDiv">
-        <div className='hideDiv'>   <Button onClick={hideHandler()}><BsBorderWidth/></Button>     </div>
+        <div className='hideDiv'>   <Button><BsBorderWidth/></Button>     </div>
         <div className='tittleDiv'><h1>Bank App</h1>   </div>
         <div className='notificationDiv'> <Button variant="primary"><BsFillBellFill /><Badge bg="success">9</Badge></Button>    </div>
       </div>

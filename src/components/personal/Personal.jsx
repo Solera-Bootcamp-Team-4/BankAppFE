@@ -3,7 +3,7 @@ import { Col, Container, Dropdown, Row } from 'react-bootstrap';
 import Header from '../header/Header';
 import PersonalItem from './PersonalItem';
 
-export default function Personal() {
+export default function Personal(props) {
   return (
     <>
       <Header />
@@ -31,9 +31,9 @@ export default function Personal() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="">$0 - $1.000</Dropdown.Item>
-                <Dropdown.Item href="">$1.000 - $10.000</Dropdown.Item>
-                <Dropdown.Item href="">$10.000 - $100.000</Dropdown.Item>
+                <Dropdown.Item href="">$0 - $100</Dropdown.Item>
+                <Dropdown.Item href="">$100 - $500</Dropdown.Item>
+                <Dropdown.Item href="">$500 - $1600</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Col>
@@ -41,9 +41,9 @@ export default function Personal() {
 
         <Row>
           <h5>Personal</h5>
-          <PersonalItem />
-          <PersonalItem />
-          <PersonalItem />
+          <PersonalItem {...props}/>
+          <PersonalItem {...props}/>
+          <PersonalItem {...props}/>
         </Row>
       </Container>
     </>

@@ -59,7 +59,7 @@ const LoginUser = () => {
       </FloatingLabel>
       </div>
         <div className="d-grid gap-2 mt-3">
-          <button type="submit" className="btn btn-primary" onClick={handleClick}>
+          <button type="submit" id="button-id" className="btn btn-primary" onClick={handleClick}>
             Submit
           </button>
         </div>

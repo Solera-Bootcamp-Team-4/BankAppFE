@@ -20,7 +20,7 @@ const Layout = () => {
         </Col>
       </Row>
       <Row className="BigDiv">
-        component div
+        Welcome to our Bank App
       </Row>
 
     </Container>
